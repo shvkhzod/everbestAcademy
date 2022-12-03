@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Poppins from "../public/fonts/Poppins/Poppins-Regular.ttf"
+
 
 const FontStyles = createGlobalStyle`
     @font-face {
