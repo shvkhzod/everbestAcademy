@@ -27,7 +27,7 @@ const Courses = () => {
         <CoursesWrap>
             <Navigation/>
             <div className="coursesBody">
-                <h2 className="coursesHeadline">O'quv kurslari</h2>
+                <h2 className="coursesHeadline">O&apos;quv kurslari</h2>
 
                 <div className="coursesFilter">
                     <p  className={allCourses ? "activeFilter" : "allCourses"} onClick={()=> {

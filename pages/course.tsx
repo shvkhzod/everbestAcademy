@@ -93,7 +93,7 @@ import { useRouter } from "next/router"
                         </ul>
 
                         <h3 className="cashAmount">{theCourse.courseFee}</h3>
-                        <button className="registerBtn">Ro'yhatdan O'tish</button>
+                        <button className="registerBtn">Ro&apos;yhatdan O&apos;tish</button>
                     </div>
                </div>
 

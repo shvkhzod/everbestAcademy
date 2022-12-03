@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         <span> </span>Kelajak Kasblarini
-        O'rganing
+        O&apos;rganing
         </h3>
 
 
@@ -101,7 +101,7 @@ export default function Home() {
 
               <div className="teachers">
                 <h2> 120+</h2>
-                <p>O'quvchilar</p>
+                <p>O&apos;quvchilar</p>
               </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function Home() {
 
      <div className="benHeadline">
       <h4 className="whyUS">NEGA BIZNI TANLASHINGIZ KERAK</h4>
-      <h2 className="studyInUs">Bizda o'qishning <span>afzalliklari</span></h2>
+      <h2 className="studyInUs">Bizda o&apos;qishning <span>afzalliklari</span></h2>
      </div>
 
      <div className="benefitsContainer">
@@ -129,7 +129,7 @@ export default function Home() {
          </div>
 
          <h3 className="advantageHeadline">Hamyonbop Narxlar</h3>
-          <p className="advantageSub">O'rtacha narxda eng yaxshi sifatli ta'limga ega bo'ling</p>
+          <p className="advantageSub">O&apos;rtacha narxda eng yaxshi sifatli ta&apos;limga ega bo&apos;ling</p>
         </div>
 
             <div className="benefit">
@@ -158,7 +158,7 @@ export default function Home() {
 
 </div>
 
-<h3 className="advantageHeadline">Qo'llab-quvvatlash</h3>
+<h3 className="advantageHeadline">Qo&apos;llab-quvvatlash</h3>
  <p className="advantageSub">Darsdan tashqari har xil
 musobaqalar va bepul
 darslar ham bor</p>
@@ -186,7 +186,7 @@ darslar ham bor</p>
             <div className="metric">
 
             <h4 className="metricHeadline">04</h4>
-            <p className="metricSub">O'QUV MARKAZ</p>
+            <p className="metricSub">O&apos;QUV MARKAZ</p>
 
 
             

@@ -8,7 +8,7 @@ const Footer = () => {
         <FooterWrap>
             <div className="column1">
                 <h2 className="headFooter">(99) 779 11 99</h2>
-                <p className="footerText">Hazorasp markazi, Akvarium kafe ro'parasi</p> 
+                <p className="footerText">Hazorasp markazi, Akvarium kafe ro&apos;parasi</p> 
             </div>
 
             <div className="column1">
