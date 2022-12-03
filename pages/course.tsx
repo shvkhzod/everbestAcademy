@@ -89,7 +89,7 @@ import { useRouter } from "next/router"
 
                     <div className="courseFee">
                         <ul className="advantages">
-                        {theCourse.courseIntentions.map((e) => <li>{e}</li>)}
+                        {theCourse.courseIntentions.map((e, index) => <li key={index} >{e}</li>)}
                         </ul>
 
                         <h3 className="cashAmount">{theCourse.courseFee}</h3>
