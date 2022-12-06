@@ -16,10 +16,22 @@ export const NavWrap = styled.div`
             list-style-type: none;
             display: flex;
             flex-direction: row;
-            gap: 52px;
-            font-size: 20px;
+            gap: 32px;
+            font-size: 18px;
             font-family: "Poppins", "sans-serif";
+            justify-content: center;
+            align-items: center;
 
+        }
+
+        .contactUs {
+            font-family: "Poppins", sans-serif;
+            background-color: ${primaryColor};
+            padding: 12px 16px;
+            font-size: 18px;
+            border-radius: 8px;
+            color:white;
+            border: none;
         }
 
      
@@ -34,16 +46,91 @@ export const NavWrap = styled.div`
             border-bottom: 2px solid ${primaryColor};
             
         }
+    
+
         .logoContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
            .theLogo {
             width: 44px;
             height: 44px;
             position: relative;
+            user-select: none;
            }
+
+           .logoName {
+            line-height: 110%;
+           }
+
         }
 
         .menuContainer {
             display: none;
+        }
+
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .aboutContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .arrowContainer {
+            .arrowDown {
+                position: relative;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .aboutDropdownActive {
+            transition: 0.3s;
+            opacity: 1;
+            transform: translateY(0px);
+            position: absolute;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 12px;
+
+            ul {
+                list-style: none;
+                padding: 2px;
+                
+            }
+        }
+
+        .aboutDropdownInActive {
+            transition: 0.3s;
+            opacity: 0;
+            transform: translateY(-10px);
+            position: absolute;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+            ul {
+                list-style: none;
+                padding: 2px;
+                
+            }
         }
 
       
@@ -114,13 +201,17 @@ export const NavWrap = styled.div`
         .active {
             color: white;
         }
+
         .logoContainer {
+            display: flex;
+            flex-direction: row;
            .theLogo {
             width: 44px;
             height: 44px;
             position: relative;
             user-select: none;
            }
+
         }
 
         

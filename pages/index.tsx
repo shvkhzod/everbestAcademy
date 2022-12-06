@@ -12,9 +12,12 @@ import TestimonialIcon from "../public/img/testimonial.svg"
 import AvatarPic from "../public/img/avatar2.png"
 import AvatarPic2 from "../public/img/avatar3.png"
 import AvatarPic3 from "../public/img/avatar4.png"
+import TgIcon from "../public/img/telgeram.svg"
 import Member from "../components/Member"
 import Footer from "../components/Footer"
 import { useRouter } from "next/router"
+import CourseShow from "../components/CourseShow"
+import Link from "next/link"
 
 
 export default function Home() {
@@ -60,7 +63,7 @@ export default function Home() {
           </button>
 
           <button className="introSecondaryBtn" onClick={() => router.push("/blogs")}>
-            Blog
+            Ba'tafsil
           </button>
 
         </div> 
@@ -116,7 +119,7 @@ export default function Home() {
       <h2 className="studyInUs">Bizda o&apos;qishning <span>afzalliklari</span></h2>
      </div>
 
-     <div className="benefitsContainer">
+     <div className="benefitsContainer" id="benefits">
         <div className="benefit">
 
          <div className="benIcon">
@@ -257,6 +260,19 @@ darslar ham bor</p>
 
      </div>
 
+     <div className="courseCards">
+      <div  onClick={() => router.push("course?courseName=graphicCourse")}>
+      <CourseShow courseShowName="Grafik Dizayner Pro" courseShowDuration="4 oy"  courseShowSub="Qisqa vaqt ichida professional grafik dizayner bo'ling" courseShowThumb="/img/dcard2.png"/>
+      </div>
+     <div  onClick={() => router.push("course?courseName=webDevCourse")}>
+     <CourseShow courseShowName="Web-Dasturlash" courseShowDuration="6 oy"  courseShowSub="Biz bilan raqamli dunyo sehrgariga aylaning" courseShowThumb="/img/ccard2.png"/>
+     </div>
+     <div  onClick={() => router.push("course?courseName=computerCourse")}>
+     <CourseShow courseShowName="Office 360" courseShowDuration="2 oy"  courseShowSub="Kompyuterda mustaqil biznes ishlarini bajarishni o'rganing" courseShowThumb="/img/cccard.png"/>
+     </div>
+    
+     </div>
+
      <div className="testimonialsContainer">
 
       <div className="testimonialTexts">
@@ -331,7 +347,7 @@ darslar ham bor</p>
      </div>
 
      <h2 className="ourTeamHeadline">Bizning <span>jamoa</span></h2>
-     <div className="teamContainer">
+     <div className="teamContainer" id="team">
       <Member name="Bobur Rajabov" status="FOUNDER" avatar="avatar2.png"/>
       <Member name="Lobar Habibova" status="CEO" avatar="avatar2.png"/>
       <Member name="Muhiddin Matchonov" status="GRAFIK DIZAYN USTOZ" avatar="avatar2.png"/>
@@ -340,7 +356,23 @@ darslar ham bor</p>
       <Member name="Asad" status="MENEJER" avatar="avatar2.png"/>
  
      </div>
+    <div className="telegramCommunity">
+      <h3 className="tgLink">
+      Bizning hamjamiyatimizga qo'shiling va yangiliklarni o'tkazib yubormang
+      </h3>
+      <div className="tgIconContainer">
+     
+        <div className="tgIcon">
+          <Image src={TgIcon} layout="fill" alt="telegram icon"/>
+        </div>
 
+        <p>@everbest_academy</p>
+       <Link href={"https://t.me/everbest_academy"}>
+       <button className="tgLinkBtn">Qoshilish</button>
+       </Link>
+      </div>
+
+    </div>
     
     </MainWrap> 
     <Footer/>
