@@ -857,6 +857,15 @@ export const MainWrap = styled.div`
         }
     }
 
+
+    .courseCards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 44px;
+}
+
+
     .testimonialsContainer {
         
         display: flex;
@@ -963,6 +972,61 @@ export const MainWrap = styled.div`
         gap: 80px;
         align-items: center;
         justify-content: space-between;
+    }
+
+
+    .telegramCommunity {
+        margin-top: 64px;
+        width: 100%;
+        height: 260px;
+        border-radius: 24px;
+        background-color: ${primaryColor};
+        padding: 32px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .tgLink {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .tgIconContainer {
+
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+            p {
+                font-size: 16px;
+                color: white;
+                margin-left: 8px;
+            }
+            .tgIcon {
+                display: none;
+                position: relative;
+                width: 48px;
+                height: 48px;
+            }
+
+            .tgLinkBtn {
+                width: 96px;
+                padding: 8px;
+                background-color: white;
+                border: none;
+                border-radius: 12px;
+                font-size: 16px;
+                margin-left: 12px;
+
+            }
+        }
     }
  
 
