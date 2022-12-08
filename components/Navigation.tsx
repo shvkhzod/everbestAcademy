@@ -10,7 +10,9 @@ import ArrowDown from "../public/img/arrowDown.svg"
 import {Link as ScrollLink} from "react-scroll/modules"
 
 
-  const Navigation = () => {
+
+
+  const Navigation = ({setModalOpen}:any) => {
     const[isNavOpen, setNavOpen] = useState(false)
     const [dropOpen, setDrop] = useState(false)
     const router = useRouter();
@@ -67,7 +69,7 @@ import {Link as ScrollLink} from "react-scroll/modules"
                <li className= {router.pathname== "/blogs" || router.pathname=="/blog" ?"active" : ""}>Blog</li>
                </Link>
              
-           <button className="contactUs">Bog'lanish</button>     
+           <button className="contactUs" onClick={()=> {setModalOpen(true)}}>Bog'lanish</button>     
             </ul>
            </div>
 

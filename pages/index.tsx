@@ -17,11 +17,15 @@ import Member from "../components/Member"
 import Footer from "../components/Footer"
 import { useRouter } from "next/router"
 import CourseShow from "../components/CourseShow"
+import Close from "../public/img/close.svg"
 import Link from "next/link"
+import { useState } from "react"
 
 
 export default function Home() {
   const router = useRouter()
+
+  const [modalOpen, setModalOpen] = useState(false)
   
   return (
     <div>
@@ -35,7 +39,7 @@ export default function Home() {
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
       </Head>
      <MainWrap>
-     <Navigation/>
+     <Navigation setModalOpen={setModalOpen}/>
      <div className="intro">
 
         <div className="introTexts">
@@ -117,6 +121,32 @@ export default function Home() {
      <div className="benHeadline">
       <h4 className="whyUS">NEGA BIZNI TANLASHINGIZ KERAK</h4>
       <h2 className="studyInUs">Bizda o&apos;qishning <span>afzalliklari</span></h2>
+     </div>
+
+     <div className={modalOpen ? "contactModalContainer" : "contactModalClosed"}>
+      <div className="closeModalContainer" onClick={() => setModalOpen(!modalOpen)}>
+        <div className="closeModal">
+          <Image src={Close} alt="close" layout="fill"/>
+        </div>
+      </div>
+       <div className="contactModal">
+       <h4>Bog'lanish uchun ma'lumotlar</h4>
+        <div className="phoneInfo">
+
+        <div>
+      <p className="phLabel">Telefon Raqam:</p> 
+        <p className="phone">+99899 779 11 99</p> 
+      </div>
+
+      <div>
+      <p className="phLabel">Telegram username:</p> 
+        <p className="phone">@Academy_Adminstrator</p> 
+      </div>
+
+        </div>
+
+     
+       </div>
      </div>
 
      <div className="benefitsContainer" id="benefits">

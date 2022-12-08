@@ -205,6 +205,9 @@ export const NavWrap = styled.div`
         .logoContainer {
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
            .theLogo {
             width: 44px;
             height: 44px;
@@ -212,8 +215,74 @@ export const NavWrap = styled.div`
             user-select: none;
            }
 
+           .logoName {
+            line-height: 110%;
+           }
+
         }
 
+
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .aboutContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .arrowContainer {
+            .arrowDown {
+                position: relative;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .aboutDropdownActive {
+            transition: 0.3s;
+            opacity: 1;
+            transform: translateY(0px);
+            position: absolute;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 12px;
+
+            ul {
+                list-style: none;
+                padding: 2px;
+                
+            }
+        }
+
+        .aboutDropdownInActive {
+            transition: 0.3s;
+            opacity: 0;
+            transform: translateY(-10px);
+            position: absolute;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+            ul {
+                list-style: none;
+                padding: 2px;
+                
+            }
+        }
         
         .menuContainer {
             display: inline-block;
@@ -225,6 +294,10 @@ export const NavWrap = styled.div`
                 width: 44px;
                 height: 44px;
             }
+        }
+
+        .contactUs {
+           display: none;
         }
 
       

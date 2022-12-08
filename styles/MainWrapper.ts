@@ -179,6 +179,88 @@ export const MainWrap = styled.div`
       }
 
 
+      .contactModalContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        padding: 0% 480px;
+        
+
+        .closeModalContainer {
+        display: flex;    
+        
+         justify-content: end;
+         flex-direction: row;
+         margin-bottom: 12px;
+         width: 100%;
+            
+
+            .closeModal {
+                position: relative;
+                width: 48px;
+                height: 48px;
+                
+            }
+        }
+       
+        .contactModal {
+            width: 100%;
+            background-color: white;
+            padding: 48px 36px;
+            border-radius: 16px;
+            box-shadow: 4px 12px 12px 0px rgba(0,0,0,0.08);
+    
+
+            h4 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .phoneInfo {
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .phLabel {
+                    opacity: 0.7;
+                }
+
+                .phone {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+
+            .phHead2 {
+                margin-top: 24px;
+                font-weight: 500;
+               
+
+            }
+           
+        }
+      }
+
+
+      .contactModalClosed {
+        display: none;
+      }
+
+
+      
+
+
       //benefit start
 
       .benefitsContainer {
@@ -742,7 +824,14 @@ export const MainWrap = styled.div`
         opacity: 0.65;
       }
     }
-} //benefit End
+}      
+
+//benefit End
+
+
+.contactModalClosed{
+        display: none;
+    }
 
     //experience start
     .experienceContainer {
