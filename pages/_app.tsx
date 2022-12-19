@@ -8,7 +8,5 @@ const render = (status: Status) => {
 }
 export default function App({ Component, pageProps }: AppProps) {
   return (
-  <Wrapper apiKey={"YOUR_API_KEY"} render={render}>
-     <Component {...pageProps} />
-  </Wrapper>)
-}
+ 
+    <Component {...pageProps} />
