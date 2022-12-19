@@ -20,6 +20,7 @@ import CourseShow from "../components/CourseShow"
 import Close from "../public/img/close.svg"
 import Link from "next/link"
 import { useState } from "react"
+import { Wrapper, Status } from "@googlemaps/react-wrapper"
 
 
 export default function Home() {
@@ -386,6 +387,19 @@ darslar ham bor</p>
       <Member name="Asad" status="MENEJER" avatar="avatar2.png"/>
  
      </div>
+
+    <div className="addressContainer">
+      <div className="addinfo">
+      <h4 className="addressLabel">Bizning Ma'nzilimiz</h4>
+      <p className="addressSub">Akvarium ro'parasi, Hazorasp markazi, Xorazm</p> 
+      </div>
+
+      <div className="map">
+        
+      </div>
+    </div>
+
+
     <div className="telegramCommunity">
       <h3 className="tgLink">
       Bizning hamjamiyatimizga qo'shiling va yangiliklarni o'tkazib yubormang
